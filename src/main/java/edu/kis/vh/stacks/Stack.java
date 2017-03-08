@@ -8,6 +8,10 @@ public class Stack {
 	private int[] ITEMS = new int[STACK_SIZE_VALUE];
 	private int total = EMPTY_STACK_VALUE;
 	
+	public int getTotal() {
+		return total;
+	}
+
 	public void push(int recievedItem) {
 		if (!isFull()) {			
 			ITEMS[++total] = recievedItem;

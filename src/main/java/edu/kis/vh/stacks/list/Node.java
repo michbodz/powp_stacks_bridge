@@ -2,7 +2,7 @@ package edu.kis.vh.stacks.list;
 
 public class Node {
 	// zamiast odwolywania sie do danego atrybutu w klasie StackList, uzywane sa teraz gettery, lub settery zwiazane z tym atrybutem
-	private int value;
+	private final int value;
 	private Node prev;
 	private Node next;
 

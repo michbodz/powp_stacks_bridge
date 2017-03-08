@@ -5,20 +5,20 @@ public class Stack {
 	private static final int FULL_STACK_VALUE = 11;
 	private static final int STACK_SIZE_VALUE = 12;
 	
-	private int[] ITEMS = new int[STACK_SIZE_VALUE];	
-
-	public int total = EMPTY_STACK_VALUE;
+	private int[] ITEMS = new int[STACK_SIZE_VALUE];
+	private int total = EMPTY_STACK_VALUE;
 	
-	public void push(int i) {
-		if (!isFull())
-		ITEMS[++total] = i;
+	private void push(int recievedItem) {
+		if (!isFull()) {			
+			ITEMS[++total] = recievedItem;
+		}
 	}
 	
-	public boolean isEmpty() {
+	private boolean isEmpty() {
 		return total == EMPTY_STACK_VALUE;
 	}
 		
-	public boolean isFull() {
+	private boolean isFull() {
 		return total == FULL_STACK_VALUE;
 	}
 			

@@ -7,36 +7,41 @@ public class Stack {
 	
 	private final int[] ITEMS = new int[STACK_SIZE_VALUE];
 	private int total = EMPTY_STACK_VALUE;
+	private StackArray stackArray;
+
+		
+	public Stack(int total, StackArray stackArray) {
+		super();
+		this.total = total;
+		this.stackArray = stackArray;
+	}
 	
+	public Stack() {
+		this.stackArray = new StackArray();
+	}
+
 	public int getTotal() {
-		return total;
+		return stackArray.getTotal();
 	}
 
 	public void push(int recievedItem) {
-		if (!isFull()) {			
-			ITEMS[++total] = recievedItem;
-		}
+		stackArray.push(recievedItem);
 	}
-	
+
 	public boolean isEmpty() {
-		return total == EMPTY_STACK_VALUE;
+		return stackArray.isEmpty();
 	}
-		
+
 	public boolean isFull() {
-		return total == FULL_STACK_VALUE;
+		return stackArray.isFull();
+	}
+
+	public int top() {
+		return stackArray.top();
+	}
+
+	public int pop() {
+		return stackArray.pop();
 	}
 			
-	public int top() {
-		if (isEmpty())
-			return EMPTY_STACK_VALUE;
-		return ITEMS[total];
-	}
-				
-	public int pop() {
-		if (isEmpty())
-			return EMPTY_STACK_VALUE;
-		
-		return ITEMS[total--];
-	}
-				
 }

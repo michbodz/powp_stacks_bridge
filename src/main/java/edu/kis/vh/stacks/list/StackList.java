@@ -3,6 +3,7 @@ package edu.kis.vh.stacks.list;
 public class StackList {
 	class Node {
 		// zamiast odwolywania sie do danego atrybutu w klasie StackList, uzywane sa teraz gettery, lub settery zwiazane z tym atrybutem
+		// uzywalem opcji Source → Generate Delegate Methods
 		private final int value;
 		private Node prev;
 		private Node next;
@@ -46,7 +47,7 @@ public class StackList {
 		}
 	}
 
-	private boolean empty() {
+	public boolean empty() {
 		return lastNode == null;
 	}
 

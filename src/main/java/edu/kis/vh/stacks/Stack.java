@@ -4,35 +4,35 @@ import edu.kis.vh.stacks.list.StackList;
 
 public class Stack {
 	
-	private StackList stackList;
+	private IStack stack;
 		
-	public Stack(StackList stackList) {
+	public Stack(IStack stack) {
 		super();		
-		this.stackList = stackList;
+		this.stack = stack;
 	}
 	
 	public Stack() {
-		this.stackList = new StackList();
+		this.stack = new StackList();
 	}
 
 	public void push(int recievedItem) {
-		stackList.push(recievedItem);
+		stack.push(recievedItem);
 	}
 
 	public boolean isEmpty() {
-		return stackList.isEmpty();
+		return stack.isEmpty();
 	}
 
 	public boolean isFull() {
-		return stackList.isFull();
+		return stack.isFull();
 	}
 
 	public int top() {
-		return stackList.top();
+		return stack.top();
 	}
 
 	public int pop() {
-		return stackList.pop();
+		return stack.pop();
 	}
 			
 }

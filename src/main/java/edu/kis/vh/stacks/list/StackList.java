@@ -1,6 +1,8 @@
 package edu.kis.vh.stacks.list;
 
-public class StackList {
+import edu.kis.vh.stacks.IStack;
+
+public class StackList implements IStack{
 	class Node {
 		// zamiast odwolywania sie do danego atrybutu w klasie StackList, uzywane sa teraz gettery, lub settery zwiazane z tym atrybutem
 		// uzywalem opcji Source → Generate Delegate Methods
@@ -37,7 +39,7 @@ public class StackList {
 	private static final int EMPTY_STACK_VALUE = -1;
 	private Node lastNode;
 
-	public void pushElement(int elementToPush) {
+	public void push(int elementToPush) {
 		if (lastNode == null)
 			lastNode = new Node(elementToPush);
 		else {
@@ -47,22 +49,22 @@ public class StackList {
 		}
 	}
 
-	public boolean empty() {
+	public boolean isEmpty() {
 		return lastNode == null;
 	}
 
-	public boolean full() {
+	public boolean isFull() {
 		return false;
 	}
 
-	public int peek() {
-		if (empty())
+	public int top() {
+		if (isEmpty())
 			return EMPTY_STACK_VALUE;
 		return lastNode.getValue();
 	}
 
 	public int pop() {
-		if (empty())
+		if (isEmpty())
 			return EMPTY_STACK_VALUE;
 		int itemRecievedFromPop = lastNode.getValue();
 		lastNode = lastNode.getPrev();

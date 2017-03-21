@@ -16,19 +16,19 @@ public class Stack {
 	}
 
 	public void push(int recievedItem) {
-		stackList.pushElement(recievedItem);
+		stackList.push(recievedItem);
 	}
 
 	public boolean isEmpty() {
-		return stackList.empty();
+		return stackList.isEmpty();
 	}
 
 	public boolean isFull() {
-		return stackList.full();
+		return stackList.isFull();
 	}
 
 	public int top() {
-		return stackList.peek();
+		return stackList.top();
 	}
 
 	public int pop() {

@@ -1,9 +1,11 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.type.StackList;
+
 public class StackFIFO extends Stack {
 
-	private final Stack temp = new Stack();
-	
+	private final Stack temp = new Stack(new StackList());
+	//Najlepszym wyborem bedzie StackList, poniewaz bardziej nadaje sie do FIFO, ze wzgledu na usuwanie elementow
 	public StackFIFO() {
 		super();
 		// TODO Auto-generated constructor stub

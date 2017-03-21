@@ -3,7 +3,7 @@ package edu.kis.vh.stacks;
 import edu.kis.vh.stacks.list.StackList;
 
 public class Stack {
-	
+	//dzięki zmianom możemy obsłużyć dowolny obiekt, który implementuje interfejs IStack
 	private IStack stack;
 		
 	public Stack(IStack stack) {

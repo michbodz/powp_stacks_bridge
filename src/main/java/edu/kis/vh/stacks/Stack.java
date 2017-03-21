@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.type.StackList;
 
 public class Stack {
 	//dzięki zmianom możemy obsłużyć dowolny obiekt, który implementuje interfejs IStack

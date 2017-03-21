@@ -8,7 +8,7 @@ import edu.kis.vh.stacks.factory.IStacksFactory;
 import edu.kis.vh.stacks.factory.ListStacksFactory;
 
 class StacksDemo {
-	
+	//Klasy w ktorych wystepuje zaleznosc abstrakcji od implementacji to klasy fabryk, poniewaz zwracane abstrakcje, sa zalezne od danej implementacji fabryki
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 		ArrayStacksFactory aSFactory = new ArrayStacksFactory();

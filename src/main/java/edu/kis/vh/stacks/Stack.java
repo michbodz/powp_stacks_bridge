@@ -4,6 +4,9 @@ import edu.kis.vh.stacks.type.StackList;
 
 public class Stack {
 	//dzięki zmianom możemy obsłużyć dowolny obiekt, który implementuje interfejs IStack
+	//F3 przenosi do deklaracji metod znajdujacych sie w interfejsie IStack
+	//Navigate -> Open Declaration - pokazuje nam typy implementujace, lub definiujace dana metode, a po wybraniu jednej z nich przenosi nas do danego miejsca
+	//Nacisniety ctrl przy pracy kursora myszki - mozemy otworzyc deklaracje, lub implementacje wybranej metody
 	private IStack stack;
 		
 	public Stack(IStack stack) {

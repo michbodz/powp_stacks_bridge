@@ -36,7 +36,6 @@ public class StackList implements IStack{
 		
 	}
 	
-	private static final int EMPTY_STACK_VALUE = -1;
 	private Node lastNode;
 
 	public void push(int elementToPush) {
